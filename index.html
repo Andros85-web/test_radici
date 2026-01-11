@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <title>Test – Tipi di radice</title>
+<meta charset="UTF-8">
+<title>Test – Tipi di radice</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 30px;
-        }
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:30px;
+}
 
-        h1, h2 {
-            color: #2c3e50;
-        }
+.riassunto, .domanda {
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:8px;
+}
 
-        .riassunto, .domanda {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
+img {
+    max-width:220px;
+    display:block;
+    margin-bottom:10px;
+}
 
-        img {
-            max-width: 220px;
-            display: block;
-            margin-bottom: 10px;
-        }
+label {
+    display:block;
+    margin:4px 0;
+}
 
-        label {
-            display: block;
-            margin: 5px 0;
-        }
-    </style>
+.corretta {
+    background:#c8f7c5;
+}
+
+.sbagliata {
+    background:#f7c5c5;
+}
+
+#risultato {
+    font-size:18px;
+    font-weight:bold;
+    margin-top:20px;
+}
+</style>
 </head>
 
 <body>
@@ -40,108 +50,92 @@
 <h1>Tipi di radice</h1>
 
 <div class="riassunto">
-    <h2>Riassunto</h2>
-    <p><b>Radice a fittone</b>: una radice principale, profonda, spesso ingrossata (carota, ravanello).</p>
-    <p><b>Radici fascicolate</b>: molte radici sottili, tutte simili, senza radice principale (cipolla, grano).</p>
-    <p><b>Radici avventizie</b>: nascono da fusto o foglie (edera, fragola).</p>
-    <p><b>Radici a tubero</b>: radici ingrossate di riserva, senza gemme (patata dolce, dalia).</p>
+<b>Radice a fittone</b>: una radice principale (carota, ravanello).<br>
+<b>Radici fascicolate</b>: molte radici sottili simili (cipolla, grano).<br>
+<b>Radici avventizie</b>: nascono da fusto o foglie (edera, fragola).<br>
+<b>Radici a tubero</b>: radici di riserva (patata dolce, dalia).
 </div>
 
-<h2>Test</h2>
+<form id="test">
 
-<form>
-
-<div class="domanda">
-    <p><b>1. Che tipo di radice è questa? (Carota)</b></p>
-    <img src="immagini/carota.jpg">
-    <label><input type="radio" name="q1"> Radice a fittone</label>
-    <label><input type="radio" name="q1"> Radici fascicolate</label>
-    <label><input type="radio" name="q1"> Radici avventizie</label>
-    <label><input type="radio" name="q1"> Radice a tubero</label>
-</div>
+<!-- OGNI domanda ha value con risposta corretta -->
 
 <div class="domanda">
-    <p><b>2. (Ravanello)</b></p>
-    <img src="immagini/ravanello.jpg">
-    <label><input type="radio" name="q2"> Radice a fittone</label>
-    <label><input type="radio" name="q2"> Radici fascicolate</label>
-    <label><input type="radio" name="q2"> Radici avventizie</label>
-    <label><input type="radio" name="q2"> Radice a tubero</label>
+<p>1. Carota</p>
+<img src="immagini/carota.jpg">
+<label><input type="radio" name="q1" value="fittone"> Fittone</label>
+<label><input type="radio" name="q1" value="fascicolate"> Fascicolate</label>
+<label><input type="radio" name="q1" value="avventizie"> Avventizie</label>
+<label><input type="radio" name="q1" value="tubero"> A tubero</label>
 </div>
 
 <div class="domanda">
-    <p><b>3. (Cipolla)</b></p>
-    <img src="immagini/cipolla.jpg">
-    <label><input type="radio" name="q3"> Radice a fittone</label>
-    <label><input type="radio" name="q3"> Radici fascicolate</label>
-    <label><input type="radio" name="q3"> Radici avventizie</label>
-    <label><input type="radio" name="q3"> Radice a tubero</label>
+<p>2. Cipolla</p>
+<img src="immagini/cipolla.jpg">
+<label><input type="radio" name="q2" value="fittone"> Fittone</label>
+<label><input type="radio" name="q2" value="fascicolate"> Fascicolate</label>
+<label><input type="radio" name="q2" value="avventizie"> Avventizie</label>
+<label><input type="radio" name="q2" value="tubero"> A tubero</label>
 </div>
 
 <div class="domanda">
-    <p><b>4. (Grano)</b></p>
-    <img src="immagini/grano.jpg">
-    <label><input type="radio" name="q4"> Radice a fittone</label>
-    <label><input type="radio" name="q4"> Radici fascicolate</label>
-    <label><input type="radio" name="q4"> Radici avventizie</label>
-    <label><input type="radio" name="q4"> Radice a tubero</label>
+<p>3. Edera</p>
+<img src="immagini/edera.jpg">
+<label><input type="radio" name="q3" value="fittone"> Fittone</label>
+<label><input type="radio" name="q3" value="fascicolate"> Fascicolate</label>
+<label><input type="radio" name="q3" value="avventizie"> Avventizie</label>
+<label><input type="radio" name="q3" value="tubero"> A tubero</label>
 </div>
 
 <div class="domanda">
-    <p><b>5. (Edera)</b></p>
-    <img src="immagini/edera.jpg">
-    <label><input type="radio" name="q5"> Radice a fittone</label>
-    <label><input type="radio" name="q5"> Radici fascicolate</label>
-    <label><input type="radio" name="q5"> Radici avventizie</label>
-    <label><input type="radio" name="q5"> Radice a tubero</label>
+<p>4. Patata dolce</p>
+<img src="immagini/patata_dolce.jpg">
+<label><input type="radio" name="q4" value="fittone"> Fittone</label>
+<label><input type="radio" name="q4" value="fascicolate"> Fascicolate</label>
+<label><input type="radio" name="q4" value="avventizie"> Avventizie</label>
+<label><input type="radio" name="q4" value="tubero"> A tubero</label>
 </div>
 
-<div class="domanda">
-    <p><b>6. (Fragola)</b></p>
-    <img src="immagini/fragola.jpg">
-    <label><input type="radio" name="q6"> Radice a fittone</label>
-    <label><input type="radio" name="q6"> Radici fascicolate</label>
-    <label><input type="radio" name="q6"> Radici avventizie</label>
-    <label><input type="radio" name="q6"> Radice a tubero</label>
-</div>
-
-<div class="domanda">
-    <p><b>7. (Patata dolce)</b></p>
-    <img src="immagini/patata_dolce.jpg">
-    <label><input type="radio" name="q7"> Radice a fittone</label>
-    <label><input type="radio" name="q7"> Radici fascicolate</label>
-    <label><input type="radio" name="q7"> Radici avventizie</label>
-    <label><input type="radio" name="q7"> Radice a tubero</label>
-</div>
-
-<div class="domanda">
-    <p><b>8. (Dalia)</b></p>
-    <img src="immagini/dalia.jpg">
-    <label><input type="radio" name="q8"> Radice a fittone</label>
-    <label><input type="radio" name="q8"> Radici fascicolate</label>
-    <label><input type="radio" name="q8"> Radici avventizie</label>
-    <label><input type="radio" name="q8"> Radice a tubero</label>
-</div>
-
-<div class="domanda">
-    <p><b>9. (Mais)</b></p>
-    <img src="immagini/mais.jpg">
-    <label><input type="radio" name="q9"> Radice a fittone</label>
-    <label><input type="radio" name="q9"> Radici fascicolate</label>
-    <label><input type="radio" name="q9"> Radici avventizie</label>
-    <label><input type="radio" name="q9"> Radice a tubero</label>
-</div>
-
-<div class="domanda">
-    <p><b>10. (Barbabietola)</b></p>
-    <img src="immagini/barbabietola.jpg">
-    <label><input type="radio" name="q10"> Radice a fittone</label>
-    <label><input type="radio" name="q10"> Radici fascicolate</label>
-    <label><input type="radio" name="q10"> Radici avventizie</label>
-    <label><input type="radio" name="q10"> Radice a tubero</label>
-</div>
-
+<button type="button" onclick="correggi()">Correggi test</button>
 </form>
+
+<div id="risultato"></div>
+
+<script>
+function correggi() {
+
+const soluzioni = {
+    q1: "fittone",
+    q2: "fascicolate",
+    q3: "avventizie",
+    q4: "tubero"
+};
+
+let punteggio = 0;
+
+for (let q in soluzioni) {
+    const risposte = document.getElementsByName(q);
+    risposte.forEach(r => {
+        r.parentElement.classList.remove("corretta","sbagliata");
+        if (r.checked) {
+            if (r.value === soluzioni[q]) {
+                r.parentElement.classList.add("corretta");
+                punteggio++;
+            } else {
+                r.parentElement.classList.add("sbagliata");
+            }
+        }
+        if (r.value === soluzioni[q]) {
+            r.parentElement.classList.add("corretta");
+        }
+    });
+}
+
+document.getElementById("risultato").innerText =
+"Punteggio: " + punteggio + " / " + Object.keys(soluzioni).length;
+}
+</script>
 
 </body>
 </html>
+
