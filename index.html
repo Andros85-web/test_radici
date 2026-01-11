@@ -7,93 +7,176 @@
 <style>
 body {
     font-family: Arial, sans-serif;
-    background:#f4f4f4;
-    margin:30px;
+    background: #f4f4f4;
+    margin: 30px;
+}
+
+h1 {
+    color: #2c3e50;
 }
 
 .riassunto, .domanda {
-    background:white;
-    padding:20px;
-    margin-bottom:20px;
-    border-radius:8px;
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 img {
-    max-width:220px;
-    display:block;
-    margin-bottom:10px;
+    max-width: 220px;
+    display: block;
+    margin-bottom: 10px;
 }
 
 label {
-    display:block;
-    margin:4px 0;
+    display: block;
+    margin: 4px 0;
 }
 
 .corretta {
-    background:#c8f7c5;
+    background: #c8f7c5;
 }
 
 .sbagliata {
-    background:#f7c5c5;
+    background: #f7c5c5;
 }
 
 #risultato {
-    font-size:18px;
-    font-weight:bold;
-    margin-top:20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
 }
 </style>
 </head>
 
 <body>
 
-<h1>Tipi di radice</h1>
+<h1>Tipi di radice – Riassunto e test</h1>
 
 <div class="riassunto">
-<b>Radice a fittone</b>: una radice principale (carota, ravanello).<br>
-<b>Radici fascicolate</b>: molte radici sottili simili (cipolla, grano).<br>
-<b>Radici avventizie</b>: nascono da fusto o foglie (edera, fragola).<br>
-<b>Radici a tubero</b>: radici di riserva (patata dolce, dalia).
+<p>
+<b>Radice a fittone</b>: è costituita da una <b>radice principale</b> ben sviluppata che cresce in profondità,
+dalla quale si originano <b>radici laterali più piccole</b>. Ha funzione di ancoraggio e spesso anche di riserva.
+</p>
+
+<p>
+<b>Radici fascicolate</b>: sono formate da <b>numerose radici sottili e simili tra loro</b>, senza una radice
+principale dominante. Si sviluppano soprattutto in superficie e permettono un rapido assorbimento di acqua
+e sali minerali.
+</p>
+
+<p>
+<b>Radici avventizie</b>: sono radici che <b>non derivano dalla radice principale</b>, ma si sviluppano da
+<b>fusto, nodi o foglie</b>. Possono servire per il sostegno, la riproduzione e permettono ad alcune piante
+di <b>arrampicarsi su muri, rocce e tronchi di alberi</b>.
+</p>
+
+<p>
+<b>Radici a tubero</b>: sono <b>radici ingrossate</b> che svolgono una funzione di <b>riserva nutritiva</b>.
+Non presentano nodi o gemme e non hanno funzione di sostegno.
+</p>
 </div>
 
 <form id="test">
 
-<!-- OGNI domanda ha value con risposta corretta -->
-
+<!-- 1 -->
 <div class="domanda">
-<p>1. Carota</p>
+<p><b>1. Carota</b></p>
 <img src="immagini/carota.jpg">
-<label><input type="radio" name="q1" value="fittone"> Fittone</label>
-<label><input type="radio" name="q1" value="fascicolate"> Fascicolate</label>
-<label><input type="radio" name="q1" value="avventizie"> Avventizie</label>
-<label><input type="radio" name="q1" value="tubero"> A tubero</label>
+<label><input type="radio" name="q1" value="fittone"> Radice a fittone</label>
+<label><input type="radio" name="q1" value="fascicolate"> Radici fascicolate</label>
+<label><input type="radio" name="q1" value="avventizie"> Radici avventizie</label>
+<label><input type="radio" name="q1" value="tubero"> Radice a tubero</label>
 </div>
 
+<!-- 2 -->
 <div class="domanda">
-<p>2. Cipolla</p>
+<p><b>2. Ravanello</b></p>
+<img src="immagini/ravanello.jpg">
+<label><input type="radio" name="q2" value="fittone"> Radice a fittone</label>
+<label><input type="radio" name="q2" value="fascicolate"> Radici fascicolate</label>
+<label><input type="radio" name="q2" value="avventizie"> Radici avventizie</label>
+<label><input type="radio" name="q2" value="tubero"> Radice a tubero</label>
+</div>
+
+<!-- 3 -->
+<div class="domanda">
+<p><b>3. Barbabietola</b></p>
+<img src="immagini/barbabietola.jpg">
+<label><input type="radio" name="q3" value="fittone"> Radice a fittone</label>
+<label><input type="radio" name="q3" value="fascicolate"> Radici fascicolate</label>
+<label><input type="radio" name="q3" value="avventizie"> Radici avventizie</label>
+<label><input type="radio" name="q3" value="tubero"> Radice a tubero</label>
+</div>
+
+<!-- 4 -->
+<div class="domanda">
+<p><b>4. Cipolla</b></p>
 <img src="immagini/cipolla.jpg">
-<label><input type="radio" name="q2" value="fittone"> Fittone</label>
-<label><input type="radio" name="q2" value="fascicolate"> Fascicolate</label>
-<label><input type="radio" name="q2" value="avventizie"> Avventizie</label>
-<label><input type="radio" name="q2" value="tubero"> A tubero</label>
+<label><input type="radio" name="q4" value="fittone"> Radice a fittone</label>
+<label><input type="radio" name="q4" value="fascicolate"> Radici fascicolate</label>
+<label><input type="radio" name="q4" value="avventizie"> Radici avventizie</label>
+<label><input type="radio" name="q4" value="tubero"> Radice a tubero</label>
 </div>
 
+<!-- 5 -->
 <div class="domanda">
-<p>3. Edera</p>
+<p><b>5. Grano</b></p>
+<img src="immagini/grano.jpg">
+<label><input type="radio" name="q5" value="fittone"> Radice a fittone</label>
+<label><input type="radio" name="q5" value="fascicolate"> Radici fascicolate</label>
+<label><input type="radio" name="q5" value="avventizie"> Radici avventizie</label>
+<label><input type="radio" name="q5" value="tubero"> Radice a tubero</label>
+</div>
+
+<!-- 6 -->
+<div class="domanda">
+<p><b>6. Mais</b></p>
+<img src="immagini/mais.jpg">
+<label><input type="radio" name="q6" value="fittone"> Radice a fittone</label>
+<label><input type="radio" name="q6" value="fascicolate"> Radici fascicolate</label>
+<label><input type="radio" name="q6" value="avventizie"> Radici avventizie</label>
+<label><input type="radio" name="q6" value="tubero"> Radice a tubero</label>
+</div>
+
+<!-- 7 -->
+<div class="domanda">
+<p><b>7. Edera</b></p>
 <img src="immagini/edera.jpg">
-<label><input type="radio" name="q3" value="fittone"> Fittone</label>
-<label><input type="radio" name="q3" value="fascicolate"> Fascicolate</label>
-<label><input type="radio" name="q3" value="avventizie"> Avventizie</label>
-<label><input type="radio" name="q3" value="tubero"> A tubero</label>
+<label><input type="radio" name="q7" value="fittone"> Radice a fittone</label>
+<label><input type="radio" name="q7" value="fascicolate"> Radici fascicolate</label>
+<label><input type="radio" name="q7" value="avventizie"> Radici avventizie</label>
+<label><input type="radio" name="q7" value="tubero"> Radice a tubero</label>
 </div>
 
+<!-- 8 -->
 <div class="domanda">
-<p>4. Patata dolce</p>
+<p><b>8. Fragola</b></p>
+<img src="immagini/fragola.jpg">
+<label><input type="radio" name="q8" value="fittone"> Radice a fittone</label>
+<label><input type="radio" name="q8" value="fascicolate"> Radici fascicolate</label>
+<label><input type="radio" name="q8" value="avventizie"> Radici avventizie</label>
+<label><input type="radio" name="q8" value="tubero"> Radice a tubero</label>
+</div>
+
+<!-- 9 -->
+<div class="domanda">
+<p><b>9. Patata dolce</b></p>
 <img src="immagini/patata_dolce.jpg">
-<label><input type="radio" name="q4" value="fittone"> Fittone</label>
-<label><input type="radio" name="q4" value="fascicolate"> Fascicolate</label>
-<label><input type="radio" name="q4" value="avventizie"> Avventizie</label>
-<label><input type="radio" name="q4" value="tubero"> A tubero</label>
+<label><input type="radio" name="q9" value="fittone"> Radice a fittone</label>
+<label><input type="radio" name="q9" value="fascicolate"> Radici fascicolate</label>
+<label><input type="radio" name="q9" value="avventizie"> Radici avventizie</label>
+<label><input type="radio" name="q9" value="tubero"> Radice a tubero</label>
+</div>
+
+<!-- 10 -->
+<div class="domanda">
+<p><b>10. Dalia</b></p>
+<img src="immagini/dalia.jpg">
+<label><input type="radio" name="q10" value="fittone"> Radice a fittone</label>
+<label><input type="radio" name="q10" value="fascicolate"> Radici fascicolate</label>
+<label><input type="radio" name="q10" value="avventizie"> Radici avventizie</label>
+<label><input type="radio" name="q10" value="tubero"> Radice a tubero</label>
 </div>
 
 <button type="button" onclick="correggi()">Correggi test</button>
@@ -106,9 +189,15 @@ function correggi() {
 
 const soluzioni = {
     q1: "fittone",
-    q2: "fascicolate",
-    q3: "avventizie",
-    q4: "tubero"
+    q2: "fittone",
+    q3: "fittone",
+    q4: "fascicolate",
+    q5: "fascicolate",
+    q6: "avventizie",
+    q7: "avventizie",
+    q8: "avventizie",
+    q9: "tubero",
+    q10: "tubero"
 };
 
 let punteggio = 0;
@@ -132,10 +221,9 @@ for (let q in soluzioni) {
 }
 
 document.getElementById("risultato").innerText =
-"Punteggio: " + punteggio + " / " + Object.keys(soluzioni).length;
+"Punteggio: " + punteggio + " / 10";
 }
 </script>
 
 </body>
 </html>
-
